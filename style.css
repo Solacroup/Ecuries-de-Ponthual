@@ -316,25 +316,25 @@ main{
   /* Modal Content/Box */
   .modal-content1 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/infrastructures-barn.jpg);
-	height: 70vh;
+	height: 80vh;
 	background-size: 60vw;
 	background-repeat: no-repeat;
 	position: center center;
 	background-color: #fefefe;
 	margin: 15vh auto; 
-	padding: 20px;
+	padding: 2rem;
 	border: 1px solid #888;
 	width: 60vw; /* Could be more or less, depending on screen size */
   }
   .modal-content2 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/infrastructures-manege.jpg);
-	height: 70vh;
+	height: 80vh;
 	width: 100%;
 	background-size: 60vw;
 	position: center center;
 	background-color: #fefefe;
 	margin: 15vh auto; 
-	padding: 20px;
+	padding: 2rem;
 	border: 1px solid #888;
 	width: 50vw; /* Could be more or less, depending on screen size */
   }
@@ -342,25 +342,25 @@ main{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/infrastructure-1.jpg);
 	height: 70vh;
 	width: 100%;
-	background-size: 80vw;
+	background-size: 60vw;
 	position: center center;
 	background-color: #fefefe;
 	margin: 15vh auto;
-	padding: 20px;
+	padding: 2rem;
 	border: 1px solid #888;
 	width: 80%; /* Could be more or less, depending on screen size */
   }
   .modal-content4 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/infrastructures-chemin-de-promenade.png);
-	height: 70vh;
-	width: 100%;
-	background-size: 80vw;
+	height: 85vh;
+	width: 40vw;
+	background-size: 40vw;
 	position: center center;
 	background-color: #fefefe;
-	margin: 15vh auto; 
-	padding: 20px;
+	margin: 12vh auto; 
+	padding: 2rem;
 	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
+	/*width: 80%;*/ /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
