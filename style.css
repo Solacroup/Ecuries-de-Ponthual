@@ -1,0 +1,433 @@
+/**********INITIALISATION DE LA PAGE****************/
+
+/* font-family: 'Great Vibes', cursive; */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	background-color:#f0f0f0;
+	color:#555555;
+	font-size: 62.5%;
+	font-family:'Shippori Mincho B1', serif;
+}
+
+/*****************REUTILISABLES************/
+
+.separateur-hr{
+	margin: 1vh 20vw;
+	background: #128ed4;
+	
+}
+/*****************HEADER*******************/
+
+header{
+	font-size:1.7rem;
+}
+/* Dégradé de bleus du logo "to bottom" */
+#header-section-1{
+	background-image: linear-gradient(to bottom, #001333, #092e58, #144c80, #186ca9, #128ed4);
+	height: 13rem;
+	z-index: 3;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transition: 50ms;
+}
+/* Navbar */
+#header-logo{
+	height:20rem;
+	margin-bottom:-10rem;
+	position: relative;
+	z-index: 3;
+	user-select: none;
+}
+.navbar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.navbar #navbarUl{
+	display: flex; 
+    flex-direction : row; 
+    justify-content: center; 
+}
+/* Ancres de la Navbar */
+header a{
+	padding: 0 2vw;
+    display: block;
+    text-align:center;
+    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 100;
+}
+.zoom{
+	transition: transform .2s ;
+	padding: 6rem 2rem;
+}
+.zoom:hover{
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+footer{
+	background-image: linear-gradient(to top, #001333, #092E58, #144C80, #186CA9, #128ED4);
+	color: #fff;
+	margin-top: 5vw;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+footer .row,
+footer .column{
+	margin: auto;
+}
+
+footer .column,
+footer .column a{
+	font-size: 1.9rem;
+	line-height: 180%;
+}
+
+footer ul{
+	padding-top: 1vw;
+}
+
+footer li{
+	list-style: none;
+	margin: auto;
+}
+
+footer i{
+	font-size: 4rem;
+	margin: 0 2rem;
+	float: left;
+	color: #fff;
+}
+
+footer p{
+	margin: 2rem auto -1rem;
+	text-align: center;
+}
+
+footer li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.tel{
+	margin: -6rem 2rem;
+}
+
+.tel a{
+	font-size: 2.2rem;
+}
+
+.mentions{
+	font-size: 1.2rem;
+}
+
+.name{
+	margin-top: -3.5vw;
+	font-size: 2.7rem;
+	line-height: 280%;
+}
+
+.zoom{
+    transition: transform .2s ;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
+
+.cursor{
+	cursor: pointer;
+}
+
+#copytel{
+	display: none;
+}
+
+/*****************MAIN****************/
+
+main{
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+.p-de-ponthual{
+	font-family: 'Great Vibes', cursive;
+	color:#128ed4;
+	font-size:8rem;
+	font-weight: 400;
+}
+.p-de-ponthual2{
+	font-family: 'Great Vibes', cursive;
+	color:#128ed4;
+	font-size:3rem;
+	font-weight: 500;
+}
+.bleu-de-ponthual{
+	color:#128ed4;
+	font-weight: 800;
+}
+
+/****************CAROUSEL HERO IMAGE*******************/
+
+/* Divs contenant les Slides */
+  .slideshow-container1{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/IMG_3779.JPG);
+	width: 100%;
+	height: 72vh;
+	margin-top: 13rem;
+	background-size: cover;
+	background-position:center top ;
+  }
+  .slideshow-container2{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/IMG_36172.jpg);
+	width: 100%;
+	height: 72vh;
+	margin-top: 13rem;
+	background-size: cover;
+	background-position:center top ;
+  }
+  .slideshow-container3{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/IMG_3127.JPG);
+	width: 100%;
+	height: 72vh;
+	margin-top: 13rem;
+	background-size: cover;
+	background-position:center top;
+  }
+ 
+  /* Texte */
+  .text {
+	color:#fff;
+	font-size: 3.5rem;
+	font-weight: 400;
+	position: absolute;
+	margin-top: 14rem;
+	width: 100%;
+	padding: 1rem;
+	z-index: 2;
+	font-family: 'Great Vibes', cursive;
+  }
+  /* Animation */
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+
+/* Section 1 Page d'Accueil : Présentation */
+
+#accueil-section1 h1{
+	font-size: 5rem;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 6vh;
+	margin-bottom: 6vh;
+	line-height: 170%;
+}
+
+/* Paragraphes et Images */
+
+.accueil-section1-p1{
+	width: 80vw;
+	margin: auto auto 6vh auto;
+	text-align: center;
+}
+.accueil-section1-img{
+	max-width: 25vw;
+	border-radius: 2rem;
+	margin: 4rem 10vw;
+	display: inline-block;
+}                                                                                                                                                                 
+.para{
+	margin: -50vh 0 0 45vw;
+	text-align: left;
+	max-width: 40vw;
+	position: absolute;
+	line-height: 170%;
+}
+
+/* Section 2 Page d'Accueil : Infrastructures */
+
+#accueil-section2 h3{
+	text-align: center;
+	margin: 10vh 0 15vh 0;
+}
+#accueil-section2 ul{
+	list-style: none;
+}
+.icon-div{
+	display: flex;
+	margin:0 6vw;
+	
+}
+.icon-div img{
+	padding-left: 4vw;
+}
+.icon-div li{
+	text-align: center;
+	width:15vw;
+}
+
+.icon{
+	width: auto;
+	height: 8rem;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+.icon:hover{
+	transform: scale(1.1);
+}
+
+.modal{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: hidden; /* no scroll */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */  
+  }
+  
+  /* Modal Content/Box */
+  .modal-content1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/infrastructures-barn.jpg);
+	height: 70vh;
+	background-size: 60vw;
+	background-repeat: no-repeat;
+	position: center center;
+	background-color: #fefefe;
+	margin: 15vh auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 60vw; /* Could be more or less, depending on screen size */
+  }
+  .modal-content2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/infrastructures-manege.jpg);
+	height: 70vh;
+	width: 100%;
+	background-size: 60vw;
+	position: center center;
+	background-color: #fefefe;
+	margin: 15vh auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50vw; /* Could be more or less, depending on screen size */
+  }
+  .modal-content3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/infrastructure-1.jpg);
+	height: 70vh;
+	width: 100%;
+	background-size: 80vw;
+	position: center center;
+	background-color: #fefefe;
+	margin: 15vh auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-content4 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/infrastructures-chemin-de-promenade.png);
+	height: 70vh;
+	width: 100%;
+	background-size: 80vw;
+	position: center center;
+	background-color: #fefefe;
+	margin: 15vh auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close1,
+  .close2,
+  .close3,
+  .close4 {
+	color: #fff;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus,
+  .close2:hover,
+  .close2:focus,
+  .close3:hover,
+  .close3:focus,
+  .close4:hover,
+  .close4:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+.text-infra{
+	color:#fff;
+	font-size: 3rem;
+	font-weight: lighter;
+	font-family: 'Great Vibes', cursive;
+}
+
+/*Prestations*/
+table{
+	border-collapse: collapse;
+	width: 60vw;
+	margin: 5vh 50%;
+	transform: translate(-50%);
+}
+
+td,
+th{
+	border: 2px solid #cccccc;
+	font-size: 1.7rem;
+	padding: 1.5rem 0;
+	text-align: center;
+}
+
+th{
+	color: #128ED4;
+}
+
+.cinquante td{
+	width: 50%;
+}
+
+.trente-trois td{
+	width: 33%;
+}
+
+.centre th{
+	text-align: center;
+}
+
+.tarifs{
+	text-align: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin: 38vh 0 0;
+}
